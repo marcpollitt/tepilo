@@ -1,0 +1,9 @@
+tepilo:
+    path: /tepilo
+    methods: GET
+    defaults: { _controller: 'AppBundle:Default:index' }
+
+tepilo-answer:
+    path: /tepilo
+    methods: POST
+    defaults: { _controller: 'AppBundle:Default:index' }

@@ -1,0 +1,9 @@
+services:
+
+     ## guzzle http client
+     guzzle:
+       class: \GuzzleHttp\Client
+
+     close.io_service:
+          class: AppBundle\Service\CloseIOService
+          arguments: [ "@guzzle", "%close_io_api_key%", "%close_io_uri%"]
